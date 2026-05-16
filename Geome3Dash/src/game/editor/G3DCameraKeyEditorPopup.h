@@ -12,7 +12,7 @@ namespace g3d
 {
 	class G3DCameraKeyEditorLoader;
 	class G3DCameraKeyEditorPopup 
-		: public geode::Popup<G3DCameraKeyEditorLoader*>
+		: public geode::Popup
 	{
 	protected:
 		G3DCameraKeyEditorLoader* ckel;

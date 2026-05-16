@@ -4,7 +4,7 @@
 
 namespace g3d
 {
-	class G3DComingSoonPopup : public geode::Popup<const std::vector<std::string>&> 
+	class G3DComingSoonPopup : public geode::Popup 
 	{
 	protected:
 		bool setup(const std::vector<std::string>& strings) override;

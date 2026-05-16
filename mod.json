@@ -1,7 +1,10 @@
 {
 	"geode": "4.0.1",
 	"gd": {
-		"win": "2.2074"
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
 	},
 	"version": "v1.0.0-beta.1",
 	"id": "rainixgd.geome3dash",
@@ -12,25 +15,23 @@
 	"developers": ["RainixGD", "Adaf"],
 	"description": "Geome3Dash transforms the 2D Geometry Dash you know and love into an exciting, open-source 3D experience. Jump into a new dimension of gameplay, customize levels like never before, and explore the adventure of a lifetime.",
 	"repository": "https://github.com/adafcaefc/Geome3Dash",
-	"dependencies": [
-        {
-            "id": "geode.node-ids",
-            "version": ">=1.18.0",
-            "importance": "required"
-        },
-        {
-            "id": "hjfod.gmd-api",
-            "version": ">=1.4.1",
-            "importance": "required"
-        }
-	],
+	"dependencies": {
+		"geode.node-ids": {
+			"version": ">=1.18.0",
+			"required": true
+		},
+		"hjfod.gmd-api": {
+			"version": ">=1.4.1",
+			"required": true
+		}
+	},
 	"settings": {
-        "disable-general-3d": {
-            "type": "bool",
+		"disable-general-3d": {
+			"type": "bool",
 			"name": "Disable 3D in Non-Story Levels",
 			"description": "Turn off 3D effects for levels outside Story Mode.",
 			"default": false
-        },
+		},
 		"disable-cloud": {
 			"type": "bool",
 			"name": "Disable Cloud Effects",

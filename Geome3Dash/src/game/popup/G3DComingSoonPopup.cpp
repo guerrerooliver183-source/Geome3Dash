@@ -50,7 +50,7 @@ namespace g3d
 
 	void G3DComingSoonPopup::onClose(CCObject* sender)
 	{
-		geode::Popup<const std::vector<std::string>&>::onClose(sender);
+		geode::Popup::onClose(sender);
 	}
 
 
@@ -60,7 +60,7 @@ namespace g3d
 	{
 		const CCSize uiSize = CCDirector::sharedDirector()->getWinSize() - CCSize(60, 40);
 		G3DComingSoonPopup* instance = new G3DComingSoonPopup();
-		if (instance && instance->initAnchored(uiSize.width, uiSize.height, strings))
+		if (instance && instance->init(uiSize.width, uiSize.height, strings))
 		{
 			instance->m_noElasticity = true;
 			instance->setID("g3d-popup-coming-soon");

@@ -24,7 +24,7 @@ namespace g3d
 	class G3DCurveEditorLoader;
 
 	class G3DCurveEditorPopup 
-		: public geode::Popup<G3DCurveEditorLoader*>
+		: public geode::Popup
 		, public CustomKeyboardDelegate
 		, public CustomMouseDelegate
 		, public CustomTouchDelegate 

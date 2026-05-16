@@ -57,7 +57,7 @@ namespace g3d
         }
     };
 
-    class G3DCameraEditorPopup : public geode::Popup<LevelEditorLayer*> 
+    class G3DCameraEditorPopup : public geode::Popup 
     {
     public:
         friend class G3DNumberSettingCamera;

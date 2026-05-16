@@ -7,7 +7,7 @@ namespace g3d
     class G3DProgressBar;
     class G3DPlanetLayer;
 
-    class G3DPlanetPopup : public geode::Popup<int> {
+    class G3DPlanetPopup : public geode::Popup {
     protected:
         G3DPlanetLayer* parentLayer;
         G3DProgressBar* normalBar;
